@@ -59,6 +59,7 @@ public class XmlApplianceDAOImpl implements ApplianceDAO {
             }
         } catch (Exception e) {
             System.err.println("Found invalid element in database");
+            return null;
         }
         return matches;
     }

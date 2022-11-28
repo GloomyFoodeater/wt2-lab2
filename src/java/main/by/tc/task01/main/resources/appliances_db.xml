@@ -23,22 +23,6 @@
         <height>40</height>
         <width>70</width>
     </oven>
-    <oven>
-        <powerConsumption>2000</powerConsumption>
-        <weight>11</weight>
-        <capacity>33</capacity>
-        <depth>300</depth>
-        <height>200</height>
-        <width>300</width>
-    </oven>
-    <oven>
-        <powerConsumption>2000</powerConsumption>
-        <weight>11</weight>
-        <capacity>33</capacity>
-        <depth>3000</depth>
-        <height>200</height>
-        <width>3000</width>
-    </oven>
     <laptop>
         <batteryCapacity>1</batteryCapacity>
         <os>Windows</os>
@@ -83,7 +67,7 @@
         <powerConsumption>150</powerConsumption>
         <weight>35</weight>
         <freezerCapacity>20</freezerCapacity>
-        <overallCapacity>350.5</overallCapacity>
+        <overallCapacity>350</overallCapacity>
         <height>250</height>
         <width>75</width>
     </refrigerator>
@@ -113,20 +97,6 @@
     </vacuumCleaner>
     <tabletPC>
         <batteryCapacity>3</batteryCapacity>
-        <displayInches>14</displayInches>
-        <memoryRom>8000</memoryRom>
-        <flashMemoryCapacity>2</flashMemoryCapacity>
-        <color>blue</color>
-    </tabletPC>
-    <tabletPC>
-        <batteryCapacity>3</batteryCapacity>
-        <displayInches>14</displayInches>
-        <memoryRom>4</memoryRom>
-        <flashMemoryCapacity>2</flashMemoryCapacity>
-        <color>blue</color>
-    </tabletPC>
-    <tabletPC>
-        <batteryCapacity>555</batteryCapacity>
         <displayInches>14</displayInches>
         <memoryRom>4</memoryRom>
         <flashMemoryCapacity>2</flashMemoryCapacity>

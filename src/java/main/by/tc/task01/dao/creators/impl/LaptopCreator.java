@@ -6,18 +6,15 @@ import java.main.by.tc.task01.entity.Appliance;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-public class LaptorCreator implements ApplianceCreator {
+public class LaptopCreator implements ApplianceCreator {
 
     private static final String BATTERY_CAPACITY = "batteryCapacity";
     private static final String OS = "os";
     private static final String MEMORY_ROM = "memoryRom";
     private static final String SYSTEM_MEMORY = "systemMemory";
     private static final String CPU = "cpu";
-    private static final String DISPLAY_INCHS = "displayInchs";
+    private static final String DISPLAY_INCHES = "displayInches";
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public Appliance create(NodeList nodes) {
         Laptop laptop = new Laptop();
@@ -31,7 +28,7 @@ public class LaptorCreator implements ApplianceCreator {
                     case MEMORY_ROM -> laptop.memoryRom = Integer.parseInt(text);
                     case SYSTEM_MEMORY -> laptop.systemMemory = Integer.parseInt(text);
                     case CPU -> laptop.cpu = Double.parseDouble(text);
-                    case DISPLAY_INCHS -> laptop.displayInches = Integer.parseInt(text);
+                    case DISPLAY_INCHES -> laptop.displayInches = Integer.parseInt(text);
                     default -> throw new IllegalArgumentException("No such appliance exists");
                 }
             }

@@ -10,7 +10,7 @@ public class ApplianceCreatorFactory {
     private final Map<String, ApplianceCreator> creators = new HashMap<>();
 
     private ApplianceCreatorFactory() {
-        creators.put("laptop", new LaptorCreator());
+        creators.put("laptop", new LaptopCreator());
         creators.put("oven", new OvenCreator());
         creators.put("refrigerator", new RefrigeratorCreator());
         creators.put("speakers", new SpeakersCreator());

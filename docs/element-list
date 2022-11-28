@@ -1,0 +1,11 @@
+main.java.by.tc.task01.dao
+main.java.by.tc.task01.dao.creators
+main.java.by.tc.task01.dao.creators.impl
+main.java.by.tc.task01.dao.impl
+main.java.by.tc.task01.entity
+main.java.by.tc.task01.entity.criteria
+main.java.by.tc.task01.main
+main.java.by.tc.task01.service
+main.java.by.tc.task01.service.impl
+main.java.by.tc.task01.service.validation
+main.java.by.tc.task01.service.validation.validators

@@ -6,6 +6,9 @@ import main.java.by.tc.task01.entity.Refrigerator;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+/**
+ * Creator of refrigerator appliance
+ */
 public class RefrigeratorCreator implements ApplianceCreator {
     private static final String POWER_CONSUMPTION = "powerConsumption";
     private static final String WEIGHT = "weight";
@@ -14,6 +17,9 @@ public class RefrigeratorCreator implements ApplianceCreator {
     private static final String HEIGHT = "height";
     private static final String WIDTH = "width";
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public Appliance create(NodeList nodes) {
         Refrigerator refrigerator = new Refrigerator();

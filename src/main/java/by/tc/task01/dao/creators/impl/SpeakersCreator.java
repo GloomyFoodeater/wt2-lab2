@@ -6,12 +6,18 @@ import main.java.by.tc.task01.entity.Speakers;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+/**
+ * Creator of speakers appliance
+ */
 public class SpeakersCreator implements ApplianceCreator {
     private static final String POWER_CONSUMPTION = "powerConsumption";
     private static final String NUMBER_OF_SPEAKERS = "numberOfSpeakers";
     private static final String FREQUENCY_RANGE = "frequencyRange";
     private static final String CORD_LENGTH = "cordLength";
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public Appliance create(NodeList nodes) {
         Speakers speakers = new Speakers();

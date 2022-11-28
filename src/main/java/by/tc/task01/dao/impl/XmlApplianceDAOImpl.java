@@ -16,10 +16,18 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Implementation of appliance dao interface that takes data from xml database in resource folder
+ */
 public class XmlApplianceDAOImpl implements ApplianceDAO {
 
     private static final String DB_PATH = "./src/main/java/by/tc/task01/main/resources/appliances_db.xml";
 
+    /**
+     * {@inheritDoc} and assumes that criteria is valid
+     *
+     * @return {@inheritDoc} or null if there was error in database or criteria was invalid
+     */
     @Override
     public List<Appliance> find(Criteria criteria) {
         List<Appliance> matches = new ArrayList<>();
@@ -52,8 +60,7 @@ public class XmlApplianceDAOImpl implements ApplianceDAO {
                             }
                         }
 
-                        if (isValid)
-                            matches.add(appliance);
+                        if (isValid) matches.add(appliance);
                     }
                 }
             }

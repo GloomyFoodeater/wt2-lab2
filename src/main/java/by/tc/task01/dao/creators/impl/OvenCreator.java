@@ -6,6 +6,9 @@ import main.java.by.tc.task01.entity.Oven;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+/**
+ * Creator of oven appliance
+ */
 public class OvenCreator implements ApplianceCreator {
     private static final String POWER_CONSUMPTION = "powerConsumption";
     private static final String WEIGHT = "weight";

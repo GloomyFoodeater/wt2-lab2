@@ -6,6 +6,9 @@ import main.java.by.tc.task01.entity.VacuumCleaner;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+/**
+ * Creator of vacuum cleaner appliance
+ */
 public class VacuumCleanerCreator implements ApplianceCreator {
 
     private static final String POWER_CONSUMPTION = "powerConsumption";

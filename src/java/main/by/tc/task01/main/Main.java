@@ -1,50 +1,58 @@
 package java.main.by.tc.task01.main;
 
-import static java.main.by.tc.task01.entity.criteria.SearchCriteria.*;
-
 import java.main.by.tc.task01.entity.Appliance;
 import java.main.by.tc.task01.entity.criteria.Criteria;
+import java.main.by.tc.task01.entity.criteria.SearchCriteria;
 import java.main.by.tc.task01.service.ApplianceService;
 import java.main.by.tc.task01.service.ServiceFactory;
 
+import java.util.List;
+
 public class Main {
 
-	public static void main(String[] args) {
-		Appliance appliance;
+    public static void main(String[] args) {
+        List<Appliance> appliances;
 
-		ServiceFactory factory = ServiceFactory.getInstance();
-		ApplianceService service = factory.getApplianceService();
+        ServiceFactory factory = ServiceFactory.getInstance();
+        ApplianceService service = factory.getApplianceService();
 
-		//////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////
 
-		Criteria criteriaOven = new Criteria(Oven.class.getSimpleName());//"Oven"
-		criteriaOven.add(Oven.CAPACITY.toString(), 3);
+        Criteria criteriaOven = new Criteria(SearchCriteria.Oven.class.getSimpleName());//"Oven"
+        criteriaOven.add(SearchCriteria.Oven.CAPACITY.toString(), 33);
 
-		appliance = service.find(criteriaOven);
+        appliances = service.find(criteriaOven);
 
-		PrintApplianceInfo.print(appliance);
+        for (Appliance appliance : appliances)
+            PrintApplianceInfo.print(appliance);
 
-		//////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////
 
-		criteriaOven = new Criteria(Oven.class.getSimpleName());
-		criteriaOven.add(Oven.HEIGHT.toString(), 200);
-		criteriaOven.add(Oven.DEPTH.toString(), 300);
+        criteriaOven = new Criteria(SearchCriteria.Oven.class.getSimpleName());
+        criteriaOven.add(SearchCriteria.Oven.HEIGHT.toString(), 200);
+        criteriaOven.add(SearchCriteria.Oven.DEPTH.toString(), 300);
 
-		appliance = service.find(criteriaOven);
+        appliances = service.find(criteriaOven);
 
-		PrintApplianceInfo.print(appliance);
 
-		//////////////////////////////////////////////////////////////////
-		
-		Criteria criteriaTabletPC = new Criteria(TabletPC.class.getSimpleName());
-		criteriaTabletPC.add(TabletPC.COLOR.toString(), "BLUE");
-		criteriaTabletPC.add(TabletPC.DISPLAY_INCHES.toString(), 14);
-		criteriaTabletPC.add(TabletPC.MEMORY_ROM.toString(), 4);
+        for (Appliance appliance : appliances)
+            PrintApplianceInfo.print(appliance);
+        //////////////////////////////////////////////////////////////////
 
-		appliance = service.find(criteriaOven);// find(Object...obj)
+        Criteria criteriaTabletPC = new Criteria(SearchCriteria.TabletPC.class.getSimpleName());
+        criteriaTabletPC.add(SearchCriteria.TabletPC.COLOR.toString(), "BLUE");
+        criteriaTabletPC.add(SearchCriteria.TabletPC.DISPLAY_INCHES.toString(), 14);
+        criteriaTabletPC.add(SearchCriteria.TabletPC.MEMORY_ROM.toString(), 4);
 
-		PrintApplianceInfo.print(appliance);
+        appliances = service.find(criteriaTabletPC);// find(Object...obj)
 
-	}
+
+        for (Appliance appliance : appliances)
+            PrintApplianceInfo.print(appliance);
+
+        appliances = service.find(null);
+        for (Appliance appliance : appliances)
+            PrintApplianceInfo.print(appliance);
+    }
 
 }

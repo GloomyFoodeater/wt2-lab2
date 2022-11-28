@@ -13,7 +13,7 @@ public class VacuumCleaner extends Appliance {
     @Override
     public String toString() {
         return String.format(
-                "POWER_CONSUMPTION=%d, " +
+                "VacuumCleaner: POWER_CONSUMPTION=%d, " +
                         "FILTER_TYPE=%s, " +
                         "BAG_TYPE=%s, " +
                         "WAND_TYPE=%s, " +

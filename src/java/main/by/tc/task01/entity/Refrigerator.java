@@ -13,7 +13,7 @@ public class Refrigerator extends Appliance {
     @Override
     public String toString() {
         return String.format(
-                "POWER_CONSUMPTION=%d, " +
+                "Refrigerator: POWER_CONSUMPTION=%d, " +
                         "WEIGHT=%d, " +
                         "FREEZER_CAPACITY=%d, " +
                         "OVERALL_CAPACITY=%d, " +

@@ -13,7 +13,7 @@ public class Oven extends Appliance {
     @Override
     public String toString() {
         return String.format(
-                "POWER_CONSUMPTION=%d, " +
+                "Oven: POWER_CONSUMPTION=%d, " +
                         "WEIGHT=%d, " +
                         "CAPACITY=%d, " +
                         "DEPTH=%d, " +

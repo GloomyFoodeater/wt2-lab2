@@ -1,7 +1,8 @@
 package java.main.by.tc.task01.entity;
 
-import java.awt.*;
 import java.main.by.tc.task01.entity.criteria.SearchCriteria;
+
+import java.awt.*;
 import java.util.Locale;
 
 public class TabletPC extends Appliance {
@@ -14,7 +15,7 @@ public class TabletPC extends Appliance {
     @Override
     public String toString() {
         return String.format(
-                "BATTERY_CAPACITY=%d, " +
+                "TabletPC: BATTERY_CAPACITY=%d, " +
                         "DISPLAY_INCHES=%d, " +
                         "MEMORY_ROM=%d, " +
                         "FLASH_MEMORY=%d, " +

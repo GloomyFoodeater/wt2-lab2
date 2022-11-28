@@ -11,7 +11,7 @@ public class Speakers extends Appliance {
     @Override
     public String toString() {
         return String.format(
-                "POWER_CONSUMPTION=%d, " +
+                "Speakers: POWER_CONSUMPTION=%d, " +
                         "NUMBER_OF_SPEAKERS=%d, " +
                         "FREQUENCY_RANGE=%s, " +
                         "CORD_LENGTH=%d",

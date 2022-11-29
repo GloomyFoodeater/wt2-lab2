@@ -8,8 +8,15 @@ import main.java.by.tc.task01.service.ServiceFactory;
 
 import java.util.List;
 
+/**
+ * Console program
+ */
 public class Main {
 
+    /**
+     * Main function of console program
+     * @param args command line arguments, unused
+     */
     public static void main(String[] args) {
         List<Appliance> appliances;
 

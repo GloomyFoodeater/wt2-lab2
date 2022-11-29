@@ -2,6 +2,9 @@ package main.java.by.tc.task01.entity;
 
 import main.java.by.tc.task01.entity.criteria.SearchCriteria;
 
+/**
+ * Laptop appliance
+ */
 public class Laptop extends Appliance {
     public double batteryCapacity;
     public String os;
@@ -22,6 +25,9 @@ public class Laptop extends Appliance {
                 batteryCapacity, os, memoryRom, systemMemory, cpu, displayInches);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean matches(String key, Object value) {
         boolean result = false;

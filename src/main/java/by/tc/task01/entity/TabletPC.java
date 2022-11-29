@@ -5,6 +5,9 @@ import main.java.by.tc.task01.entity.criteria.SearchCriteria;
 import java.awt.*;
 import java.util.Locale;
 
+/**
+ * Tablet pc appliance
+ */
 public class TabletPC extends Appliance {
     public int batteryCapacity;
     public int displayInches;
@@ -23,6 +26,9 @@ public class TabletPC extends Appliance {
                 batteryCapacity, displayInches, memoryRom, flashMemoryCapacity, color.toString());
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean matches(String key, Object value) {
         boolean b = false;

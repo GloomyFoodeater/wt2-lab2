@@ -2,6 +2,9 @@ package main.java.by.tc.task01.entity;
 
 import main.java.by.tc.task01.entity.criteria.SearchCriteria;
 
+/**
+ * Speakers appliance
+ */
 public class Speakers extends Appliance {
     public int powerConsumption;
     public int numberOfSpeakers;
@@ -18,6 +21,9 @@ public class Speakers extends Appliance {
                 powerConsumption, numberOfSpeakers, frequencyRange, cordLength);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean matches(String key, Object value) {
         boolean result = false;

@@ -2,6 +2,9 @@ package main.java.by.tc.task01.entity;
 
 import main.java.by.tc.task01.entity.criteria.SearchCriteria;
 
+/**
+ * Vacuum cleaner appliance
+ */
 public class VacuumCleaner extends Appliance {
     public int powerConsumption;
     public FilterType filterType;
@@ -40,6 +43,9 @@ public class VacuumCleaner extends Appliance {
         return result;
     }
 
+    /**
+     * All possible filters of vacuum cleaner
+     */
     public enum FilterType {
         A, B, C
     }

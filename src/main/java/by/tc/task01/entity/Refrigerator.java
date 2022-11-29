@@ -2,6 +2,9 @@ package main.java.by.tc.task01.entity;
 
 import main.java.by.tc.task01.entity.criteria.SearchCriteria;
 
+/**
+ * Refrigerator appliance
+ */
 public class Refrigerator extends Appliance {
     public int powerConsumption;
     public int weight;
@@ -22,6 +25,9 @@ public class Refrigerator extends Appliance {
                 powerConsumption, weight, freezerCapacity, overallCapacity, height, width);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean matches(String key, Object value) {
         boolean result = false;

@@ -21,7 +21,7 @@ import java.util.Map;
  */
 public class XmlApplianceDAOImpl implements ApplianceDAO {
 
-    private static final String DB_PATH = "./src/main/java/by/tc/task01/main/resources/appliances_db.xml";
+    private static final String DB_PATH = "./src/main/resources/appliances_db.xml";
 
     /**
      * {@inheritDoc} and assumes that criteria is valid

@@ -8,6 +8,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Factory of value validator
+ */
 public class ValueValidatorFactory {
     private static final ValueValidatorFactory instance = new ValueValidatorFactory();
 
@@ -81,10 +84,19 @@ public class ValueValidatorFactory {
         ), new RangeValidator());
     }
 
+    /**
+     * Get instance of value validator factory
+     * @return Instance of value validator factory
+     */
     public static ValueValidatorFactory getInstance() {
         return instance;
     }
 
+    /**
+     * Get instance of value validator by search criteria name
+     * @param searchCriteria name of search criteria
+     * @return Instance of value validator
+     */
     public ValueValidator getValidator(String searchCriteria) {
 
         for (var entry : validators.entrySet()) {

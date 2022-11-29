@@ -13,8 +13,8 @@ public interface ApplianceDAO {
     /**
      * Finds all appliances that match given criteria
      *
-     * @param criteria criteria that appliance must meet
-     * @return Filtered list of appliance by given criteria
+     * @param criteria criteria that must be met
+     * @return Subset of appliances in shop
      */
     List<Appliance> find(Criteria criteria);
 }
